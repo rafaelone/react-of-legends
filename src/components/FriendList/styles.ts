@@ -13,3 +13,27 @@ export const Container = styled.aside`
     width: 240px;
   }
 `;
+
+export const Social = styled.div`
+  text-transform: uppercase;
+  color: #e4dbc8;
+  padding: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition-duration: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    img {
+      padding-left: 12.8px;
+      transition-duration: 0.2s;
+      cursor: pointer;
+      &:hover {
+        filter: brightness(150%);
+        transition-duration: 0.2s;
+      }
+    }
+  }
+`;
