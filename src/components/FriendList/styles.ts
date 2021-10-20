@@ -37,3 +37,8 @@ export const Social = styled.div`
     }
   }
 `;
+export const Footer = styled.footer`
+  width: 99%;
+  border: 1px solid #1e282d;
+  height: 43px;
+`;
