@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import background from '../../assets/images/background.jpg';
+// import backgroundGif from '../../assets/gif/vayne.gif';
 
 export const ContainerHome = styled.div`
   background-repeat: no-repeat;

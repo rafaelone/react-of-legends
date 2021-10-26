@@ -10,6 +10,7 @@ function App(): ReactElement {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      {/* <SignIn /> */}
       <Home />
     </ThemeProvider>
   );
