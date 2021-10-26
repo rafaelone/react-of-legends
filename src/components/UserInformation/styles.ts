@@ -6,7 +6,6 @@ type StatusProps = {
 
 export const Container = styled.div`
   margin-top: 2px;
-
   color: #f0e6d2;
   position: relative;
   border-bottom: 1px solid #65656f;
@@ -59,7 +58,7 @@ export const StatusContainer = styled.div`
   margin-left: 5px;
   position: relative;
   span {
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1px;
   }
 `;
@@ -74,7 +73,7 @@ export const Status = styled.div<StatusProps>`
     position: relative;
     font-size: 14px;
     margin-left: 23px;
-    margin-top: 2px;
+    margin-top: 4px;
     background: transparent;
     border: 0;
     color: #09a646;

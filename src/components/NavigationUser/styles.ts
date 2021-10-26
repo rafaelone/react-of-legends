@@ -51,6 +51,7 @@ export const PointsContainer = styled.li`
     img {
       display: inline-block;
       margin-right: 6px;
+      width: 16px;
     }
 
     span {

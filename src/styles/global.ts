@@ -7,6 +7,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: 'Domine', sans-serif !important;
   }
 
   body {
@@ -15,6 +16,22 @@ export default createGlobalStyle`
 
   input, span, strong,
   small, button, h1,h2,h3,h4,h5,h6, a {
-    font-family: Roboto, sans-serif;  }
+    font-family: Roboto, sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+::-webkit-scrollbar {
+  width: 4.5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #785a28;
+  border-radius: 50px;
+}
 
 `;
