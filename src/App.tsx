@@ -1,21 +1,19 @@
 import {ReactElement} from 'react';
 import {ThemeProvider} from 'styled-components';
-import {Home} from './pages/Home';
-import {SignIn} from './pages/SignIn';
-import {History} from './pages/History';
+import {BrowserRouter} from 'react-router-dom';
 
 import GlobalStyle from './styles/global';
 import theme from './styles/theme';
-import {Profile} from './pages/Profile';
+
+import {Routes} from './routes';
 
 function App(): ReactElement {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      {/* <SignIn /> */}
-      <Home />
-      {/* <Profile /> */}
-      {/* <History /> */}
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

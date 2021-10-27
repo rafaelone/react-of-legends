@@ -13,6 +13,9 @@ export const NavigationType = styled.li<navigationTypeProps>`
 
   a {
     padding: 0px 16px;
+    &.active {
+      filter: brightness(0.9);
+    }
   }
 
   img {

@@ -20,10 +20,12 @@ export function Home(): ReactElement {
       <FriendList />
       <SubNav>
         <SubNavItem
+          active={subNavigation === 'overview'}
           title="Overview"
           handleChange={() => handleChangeSubNavigation('overview')}
         />
         <SubNavItem
+          active={subNavigation === 'patch'}
           title="Patch Notes"
           handleChange={() => handleChangeSubNavigation('patch')}
         />

@@ -39,39 +39,51 @@ export const GameType = styled.li`
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: not-allowed;
+
+    &.disabled {
+      a {
+        cursor: not-allowed;
+        filter: grayscale(100%);
+      }
+    }
+
     &.active,
     &:hover {
+      cursor: pointer;
       background: linear-gradient(
         0deg,
         rgba(235, 235, 244, 0.1348914566),
         hsla(0, 0%, 100%, 0) 70%
       );
 
-      /* cursor: pointer; */
       transition-duration: 0.2s;
     }
 
-    &.active a {
-      color: #beb088;
-      opacity: 1;
-      filter: grayscale(0%);
-      cursor: pointer;
-    }
-
     a {
-      color: #f0e6d2;
+      color: #beb088;
       text-transform: uppercase;
       font-weight: 700;
       background: transparent;
       letter-spacing: 1px;
-      padding: 44.5px 1.5rem;
+      padding: 28.5px 1.5rem;
       display: block;
       transition-duration: 0.2s;
-
-      filter: grayscale(100%);
+      filter: brightness(100);
       opacity: 0.4;
-      cursor: no-drop;
+
+      &.active {
+        color: #beb088;
+        opacity: 1;
+        filter: grayscale(0%);
+        cursor: pointer;
+        background: linear-gradient(
+          0deg,
+          rgba(235, 235, 244, 0.1348914566),
+          hsla(0, 0%, 100%, 0) 70%
+        );
+
+        transition-duration: 0.2s;
+      }
     }
   }
 `;

@@ -1,4 +1,5 @@
 import {ReactElement} from 'react';
+import {NavLink} from 'react-router-dom';
 import {NavigationType, PointsContainer} from './styles';
 
 import perfilIcon from '../../assets/icons/profile.png';
@@ -11,10 +12,10 @@ import blueEssenceIcon from '../../assets/icons/blue-essence.png';
 export function NavigationUser(): ReactElement {
   return (
     <ul>
-      <NavigationType className="active">
-        <a href="/">
+      <NavigationType>
+        <NavLink to="/profile" exact>
           <img src={perfilIcon} alt="perfil" />
-        </a>
+        </NavLink>
       </NavigationType>
       <NavigationType className="disabled">
         <a href="/">
