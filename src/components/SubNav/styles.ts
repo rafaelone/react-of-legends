@@ -10,12 +10,15 @@ export const NavbarProfile = styled.nav`
     display: flex;
     list-style: none;
     li {
-      a {
+      button {
+        background: transparent;
+        border: 0;
         color: #beb088;
         font-size: 14px;
         text-transform: uppercase;
         font-weight: bold;
         padding: 15px;
+        cursor: pointer;
         &:hover {
           transition-duration: 0.2s;
           color: #fff;

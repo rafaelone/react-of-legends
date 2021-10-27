@@ -2,12 +2,15 @@ import {ReactElement} from 'react';
 
 type SubNavItem = {
   title: string;
+  handleChange?: () => void;
 };
 
-export function SubNavItem({title}: SubNavItem): ReactElement {
+export function SubNavItem({title, handleChange}: SubNavItem): ReactElement {
   return (
     <li>
-      <a href="/">{title}</a>
+      <button type="button" onClick={handleChange}>
+        {title}
+      </button>
     </li>
   );
 }
