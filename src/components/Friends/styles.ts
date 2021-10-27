@@ -4,7 +4,7 @@ export const ContainerFriends = styled.div`
   span {
     color: #e4dbc8;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     font-size: 14px;
     font-weight: 700;
     transition-duration: 0.2s;
@@ -91,13 +91,19 @@ export const FriendInformation = styled.div`
   }
 
   span.name {
-    font-size: 18px;
+    font-size: 17px;
     color: rgba(228, 219, 200, 0.5137254901960784);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 500;
   }
 
   span.status {
     margin-top: 3px;
     color: #09a646;
-    font-size: 14px;
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
   }
 `;

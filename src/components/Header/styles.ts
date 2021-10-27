@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   position: fixed;
   height: 75px;
   width: calc(100vw - 240px);
-
+  top: 0;
   background-color: initial;
   nav {
     background-color: rgba(1, 10, 19, 0.7333333333333333);
