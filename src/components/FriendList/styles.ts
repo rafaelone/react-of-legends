@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.aside`
   width: 240px;
-
   background-color: rgba(1, 10, 19, 0.7333333333333333);
   position: fixed;
   right: 0;
@@ -18,18 +17,22 @@ export const Social = styled.div`
   text-transform: uppercase;
   color: #e4dbc8;
   padding: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
   transition-duration: 0.2s;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  span {
+    font-size: 14px;
+  }
 
   div {
     img {
       padding-left: 12.8px;
       transition-duration: 0.2s;
       cursor: pointer;
+      width: 30px;
       &:hover {
         filter: brightness(150%);
         transition-duration: 0.2s;
