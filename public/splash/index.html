@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Splash</title>
+    <style>
+        html,body{
+            margin:0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color:transparent;
+        }
+        @keyframes fadeIn {
+            0%   { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        #logo{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            height: 200px;
+            width: 200px;
+            opacity: 0;
+            animation: fadeIn 3s;
+            animation-fill-mode:forwards;
+        }
+    </style>
+</head>
+<body>
+    <img role='main' tabindex="0" id='logo' aria-atomic="true" aria-busy="true" alt='Lumis of Legends' src='./splash.png'/>
+</body>
+<script>
+    document.getElementById('logo').focus()
+</script>
+</html>
