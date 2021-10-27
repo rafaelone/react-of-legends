@@ -8,6 +8,7 @@ export const NavbarProfile = styled.nav`
 
   ul {
     display: flex;
+    list-style: none;
     li {
       a {
         color: #beb088;

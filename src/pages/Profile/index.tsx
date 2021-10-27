@@ -1,6 +1,6 @@
 import {ReactElement} from 'react';
 import {Header} from '../../components/Header';
-import {NavProfile} from '../../components/NavProfile';
+import {SubNav} from '../../components/SubNav';
 import {OverviewProfile} from '../../components/Profile';
 
 export function Profile(): ReactElement {
@@ -8,7 +8,7 @@ export function Profile(): ReactElement {
     <>
       <div>
         <Header />
-        <NavProfile />
+        {/* <SubNav /> */}
         <OverviewProfile />
       </div>
     </>

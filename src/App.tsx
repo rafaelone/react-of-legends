@@ -6,6 +6,7 @@ import {History} from './pages/History';
 
 import GlobalStyle from './styles/global';
 import theme from './styles/theme';
+import {Profile} from './pages/Profile';
 
 function App(): ReactElement {
   return (
@@ -13,6 +14,8 @@ function App(): ReactElement {
       <GlobalStyle />
       {/* <SignIn /> */}
       <Home />
+      {/* <Profile /> */}
+      {/* <History /> */}
     </ThemeProvider>
   );
 }

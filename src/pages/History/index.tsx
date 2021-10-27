@@ -1,14 +1,17 @@
 import {ReactElement} from 'react';
 import {Header} from '../../components/Header';
 import {MatchHistory} from '../../components/History';
-import {NavProfile} from '../../components/NavProfile';
+import {SubNav} from '../../components/SubNav';
+import {SubNavItem} from '../../components/SubNavItem';
 
 export function History(): ReactElement {
   return (
     <>
       <div>
         <Header />
-        <NavProfile />
+        <SubNav>
+          <SubNavItem title="History" />
+        </SubNav>
         <MatchHistory />
       </div>
     </>
